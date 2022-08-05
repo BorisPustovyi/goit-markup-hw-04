@@ -132,11 +132,12 @@ letter-spacing: 0.02em;
 
 .envelope{ 
     margin-right: 10px;
-    fill: var(--primary-text-color);}
+    fill: currentColor;}
 
 .smartphone{ 
     margin-right: 10px;
-    fill: var(--primary-text-color);}
+    fill: currentColor;}
+    
 .header-mail:focus, 
 .header-mail:hover{
     color:var(--accent-text-color)}
