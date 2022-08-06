@@ -120,6 +120,8 @@ font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
+display: flex;
+align-items: center;
 }
 .nav-adress{
     margin-left: auto;
@@ -137,7 +139,7 @@ letter-spacing: 0.02em;
 .smartphone{ 
     margin-right: 10px;
     fill: currentColor;}
-    
+
 .header-mail:focus, 
 .header-mail:hover{
     color:var(--accent-text-color)}
@@ -264,11 +266,6 @@ margin-bottom: 10px;
     color: var(--title-text-color);
 }
 
-.position {
-font-weight: 400;
-font-size: 16px;
-line-height: 19px;
-}
 /* ----------------------footer-------------------- */
 .footer {
     background-color: var(--hero-and-footer-background-color);
@@ -398,9 +395,17 @@ border-color: transparent;
 
 .examples-list-item{
     width: 370px; margin: 15px;
-    
+
 }
+
 .examples-list-item:hover, .examples-list-item:focus
+{
+    box-shadow: 
+    0px 3px 1px rgba(0, 0, 0, 0.1), 
+    0px 1px 2px rgba(0, 0, 0, 0.08), 
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.examples-list-link:hover, .examples-list-link:focus
 {
     box-shadow: 
     0px 3px 1px rgba(0, 0, 0, 0.1), 
@@ -421,6 +426,7 @@ margin-bottom: 4px;
 font-size: 16px;
 line-height: 1.88;
 letter-spacing: 0.03em;
+color: var(--primary-text-color);
 }
 .card-name{
     padding-right:24px;
@@ -442,7 +448,6 @@ letter-spacing: 0.03em;
 .team {background-color: var(--background-btn-color);}
 .team-list {display: flex;   gap: 30px;}
 .team-name {margin-bottom: 10px;  padding-top: 30px;}
-.position {}
 
 .team-list-item{
     background-color:var(--wighte-color);
@@ -454,11 +459,18 @@ letter-spacing: 0.03em;
     border-radius: 0px 0px 4px 4px;
 }
 
+
+.position {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 16px;
+    }
 .team-socials {
     display: flex;
     justify-content:center;
     gap:10px;
-    margin: 16px 32px 30px;
+    padding-bottom: 30px;
 
 }
 .team-socials-link {
@@ -496,9 +508,10 @@ border: 1px solid var(--clints-borderandcompany-color);
 .clints-icon {
 fill: var(--clints-borderandcompany-color);
 }
-.clints-link:focus, .clints-link:hover{border: 1px solid var(--accent-text-color);}
+.clints-link:focus, .clints-link:hover
+{border-color: var(--accent-text-color);}
 .clints-link:focus .clints-icon
-{ fill: var(--accent-text-color);}
+{ fill: var(--accent-text-color);}  
 .clints-link:hover .clints-icon
 { fill: var(--accent-text-color);}
 
